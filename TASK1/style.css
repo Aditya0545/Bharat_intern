@@ -1,0 +1,315 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(40, 39, 39),black);
+    background: linear-gradient(black,rgb(40,39,39));
+    color: white;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(40, 39, 39),black);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 80px 20px;
+    margin-top: -100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Added hover transition */
+}
+
+nav ul li a:hover {
+    color: lightcoral; /* Hover color */
+}
+
+.header-text {
+    padding-left: 80px;
+    margin-top: 60px;
+}
+
+.header-text h1 {
+    padding: 0px;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: lightcoral;
+}
+
+/* -------------------about------------------- */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    font-size: 30px;
+
+}
+
+.about-photo {
+    max-width: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about-content {
+    max-width: 600px;
+}
+.about-content h2{
+    font-size: 60px;
+    color: rgb(226, 232, 137);
+}
+.about-content p{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+/* --------------------skills------------------------- */
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    color: white;
+}
+
+/* Styles for the top section */
+
+.top_div {
+    text-align: center;
+    width: 100%;
+}
+
+.top_div h1 {
+    margin-top: 20px;
+    font-size: 60px;
+    color: rgb(226, 232, 137);
+}
+
+/* Styles for individual content items */
+
+.content {
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease; /* Added hover transition */
+}
+
+.content:hover {
+    transform: scale(1.05); /* Added hover effect */
+}
+
+.content img {
+    width: 100%; /* Make images responsive within their containers */
+    max-width: 150px; /* Adjust as needed */
+}
+
+.content h2 {
+    margin-top: 10px;
+    color: #fff; /* Specify the color for better visibility */
+}
+
+/* .........................Projects......................... */
+
+#projects {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.sub-tittle{
+    color: rgb(226, 232, 137);
+    font-size: 60px;
+}
+
+.container .sub-tittle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#projects {
+    background: transparent;
+    padding: 30px 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.project {
+    color: rgb(209, 204, 204);
+    background: transparent;
+    background-color: rgb(3, 10, 65);
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Added hover transition */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Added hover effect */
+}
+
+.link {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 10px;
+}
+
+.poster {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 10px;
+}
+
+.container101 {
+    margin: 40px;
+}
+
+.sub-tittle {
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/*.................contact.........................*/
+
+#contact {
+    background: linear-gradient(rgb(40, 39, 39),black);
+    background-color: #000000; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 100px 0;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #333; /* Dark form background color */
+    padding: 20px; /* Increased padding for better visibility */
+    border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+#contact label {
+    margin-top: 10px;
+    color: #fff; /* Light label text color */
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #444; /* Dark input background color */
+    color: #fff; /* Light input text color */
+    border: 1px solid #555; /* Dark border color */
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Added hover transition */
+}
+
+#contact button:hover {
+    background-color: #45a049; /* Hover color */
+}
+/* Default styles */
+
+/* Your existing styles go here */
+
+/* Media Queries for Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header-text {
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+}
+
+/* Your existing styles for the about section */
+
+/* Media Queries for Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    .about-col-1 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+}
