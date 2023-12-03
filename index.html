@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Buttons</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #343434;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button.blue {
+            background-color: #3498db;
+        }
+
+        .button.green {
+            background-color: #2ecc71;
+        }
+
+        .button.orange {
+            background-color: #e67e22;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <a href="/Level-1/index.html" class="button blue">Level 1 - Landing Page</a>
+        <a href="/Level-2/index2.html" class="button green">Level 2 - My Portfolio</a>
+        <a href="/Level-3/index.html" class="button orange">Level 3 - Calculator</a>
+    </div>
+
+</body>
+</html>
